@@ -8,6 +8,8 @@ set -e
 
 # grab the text-only version of the big blocklist collection
 curl -sSL 'https://v.firebog.net/hosts/lists.php?type=all' | \
+  # remove over aggressive list with too many valid whitelist domains
+  grep -v mahakala.is | \
   # curl those urls and normalize the list to just domain names
   xargs -n 1 curl -sSL | \
   perl -pe '
