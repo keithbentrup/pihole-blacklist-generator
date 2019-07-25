@@ -7,8 +7,8 @@
 # set -x
 
 blocklist_path_prefix=/tmp/.tmp-blocklist
-# remove old tmp blocklists
-rm $blocklist_path_prefix-http*
+# remove old tmp blocklists if they exist
+rm $blocklist_path_prefix-http* || :
 
 # find the right list of blocklists for you from firebog
 # prune that list (here)
