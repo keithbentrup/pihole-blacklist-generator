@@ -1,0 +1,23 @@
+{
+  "name": "pihole-blocklist-generator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "pihole-blocklist-generator.js",
+  "scripts": {
+    "eslint": "./node_modules/eslint/bin/eslint.js --fix",
+    "prettier": "./node_modules/prettier/bin-prettier.js --config .prettierrc.json --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithbentrup/pihole-blocklist-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keithbentrup/pihole-blocklist-generator/issues"
+  },
+  "homepage": "https://github.com/keithbentrup/pihole-blocklist-generator#readme",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "prettier": "^2.7.1"
+  }
+}
