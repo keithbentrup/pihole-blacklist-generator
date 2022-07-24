@@ -5,7 +5,8 @@
   "main": "pihole-blocklist-generator.js",
   "scripts": {
     "eslint": "./node_modules/eslint/bin/eslint.js --fix",
-    "prettier": "./node_modules/prettier/bin-prettier.js --config .prettierrc.json --write .",
+    "prettier-check-for-unformatted": "./node_modules/prettier/bin-prettier.js --check .",
+    "prettier-overwrite": "./node_modules/prettier/bin-prettier.js --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
