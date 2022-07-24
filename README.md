@@ -1,5 +1,15 @@
 # pihole-blocklist-generator
 
-Simply run blocklist generator and add latest combined blocklist.txt
+# Usage
 
-Then in pihole, add your raw github blocklist.txt url.
+In pihole, /etc/pihole/adlists.list
+
+# Customizing and updating
+
+```
+git clone git@github.com:keithbentrup/pihole-blocklist-generator.git
+cd pihole-blocklist-generator
+./blocklist-generator.sh
+git commit -m "updates"
+git push
+```
