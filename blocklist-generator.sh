@@ -16,8 +16,6 @@ rm $blocklist_path_prefix-http* || :
 
 # grab your preferred text-only version of the big blocklist collection
 curl -sSL 'https://v.firebog.net/hosts/lists.php?type=nocross' | \
-  # remove over aggressive lists with too many valid whitelist domains
-  grep -v hostsfile.org | \
   # how do you find over aggressive lists?
   # save tmp blocklists to grep later for repeated false positives during a trial phase
   xargs -n 1 -I % bash -c 'curl -sSL "%" -o '$blocklist_path_prefix'-$(echo % | tr '/' '_' | tr -cd '[:alnum:]\_\.\-\n')'
