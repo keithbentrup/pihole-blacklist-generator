@@ -1,6 +1,9 @@
 # pihole-blocklist-generator
 
 # Usage
+Recommended reading 
+1. https://avoidthehack.com/best-pihole-blocklists
+2. https://firebog.net/
 
 In pihole, /etc/pihole/adlists.list
 
